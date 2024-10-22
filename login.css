@@ -1,0 +1,346 @@
+
+/*dropdown*/
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; 
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #257e0f;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; 
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #62ff00;
+}
+
+
+nav ul li .dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #181c17;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #21341a; 
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+*/Franchise*/
+
+nav .dropdown-backdrop {
+    padding: 10px 0;
+    display: none;
+    opacity: 0;
+    justify-content: left;
+}
+
+nav ul .dropdown-backdrop{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul li .dropdown-backdrop{
+    position: relative; 
+    margin: 0 15px;
+}
+
+nav ul li a .dropdown-backdrop{
+    color: #257e0f;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; 
+    transition: color 0.3s;
+}
+
+nav ul li a:hover .dropdown-backdrop{
+    color: #62ff00;
+    display: block;
+}
+
+
+
+nav ul li .dropdown-backdrop {
+    display: none; 
+    position: absolute; 
+    background-color: #181c17;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-backdrop li {
+    margin: 0;
+}
+
+nav ul li .dropdown-backdrop li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-backdrop li a:hover {
+    background-color: #21341a; 
+}
+
+nav ul li:hover .dropdown-backdrop {
+    display: block;
+}
+
+
+
+/*Login
+
+
+h2{
+    color: #21341a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+label{
+    color: #21341a;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    color: #257e0f;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    color: #91fa77;
+    font-size: 110%;
+}
+
+p a{
+    color: #1aff00;
+}
+*/
+body{
+    background-color: black;
+    background-image:url(transferir.jfif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+
+
+/*login 2*/
+
+/* From Uiverse.io by micaelgomestavares */ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .form button {
+    align-self: flex-end;
+  }
+  
+  .flex-column > label {
+    color: #257e0f;
+    font-weight: 600;
+    font-size: ;
+  }
+  
+  .inputForm {
+    border: 1.5px solid #91fa77;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #91fa77;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .flex-row > div > label {
+    font-size: 14px;
+    color: #91fa77;
+    font-weight: 400;
+  }
+  
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #62ff00;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #1b2d15;
+    border: none;
+    color: #91fa77;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    background-color: #21341a;
+  }
+  
+  .p {
+    text-align: center;
+    color: #7fb572;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #7fb572;
+    background-color: #21341a;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    border: 1px solid #62ff00;
+    ;
+  }
+  
+      
+
+/*footer*/
+
+footer{
+    background-color: /*#181c17*/;
+    color: #91fa77;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section{
+    flex-basis: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-section h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #62ff00;
+}
+
+.footer-section p, .footer-section ul{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 115%;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a{
+    color: #91fa77;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover{
+    color: #62ff00 ;
+}
+
+
