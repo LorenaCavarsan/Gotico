@@ -1,3 +1,13 @@
+body{
+    background-color: black;
+    background-image:url(transferir.jfif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+
 
 /*dropdown*/
 
@@ -59,243 +69,93 @@ nav ul li:hover .dropdown-content {
 }
 
 
-*/Franchise*/
 
-nav .dropdown-backdrop {
-    padding: 10px 0;
-    display: none;
-    opacity: 0;
-    justify-content: left;
-}
-
-nav ul .dropdown-backdrop{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+/*LOGIN */
 
 
-nav ul li .dropdown-backdrop{
-    position: relative; 
-    margin: 0 15px;
-}
-
-nav ul li a .dropdown-backdrop{
-    color: #257e0f;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    display: block; 
-    transition: color 0.3s;
-}
-
-nav ul li a:hover .dropdown-backdrop{
-    color: #62ff00;
-    display: block;
-}
-
-
-
-nav ul li .dropdown-backdrop {
-    display: none; 
-    position: absolute; 
-    background-color: #181c17;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; 
-    min-width: 160px;
-    padding: 0;
-}
-
-nav ul li .dropdown-backdrop li {
-    margin: 0;
-}
-
-nav ul li .dropdown-backdrop li a {
-    padding: 10px 15px;
-}
-
-nav ul li .dropdown-backdrop li a:hover {
-    background-color: #21341a; 
-}
-
-nav ul li:hover .dropdown-backdrop {
-    display: block;
-}
-
-
-
-/*Login
-
-
-h2{
-    color: #21341a;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-}
-
-label{
-    color: #21341a;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-button{
-    color: #257e0f;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-p{
-    color: #91fa77;
-    font-size: 110%;
-}
-
-p a{
-    color: #1aff00;
-}
-*/
-body{
-    background-color: black;
-    background-image:url(transferir.jfif);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-    background-attachment: fixed;
-}
-
-
-
-/*login 2*/
-
-/* From Uiverse.io by micaelgomestavares */ 
 .form {
+    --bg-light: #efefef;
+    --bg-dark: #000000;   /*#707070*/
+    --clr: #00ff6a;
+    --clr-alpha: #9c9c9c60;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    width: 450px;
-    border-radius: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  ::placeholder {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  .form button {
-    align-self: flex-end;
-  }
-  
-  .flex-column > label {
-    color: #257e0f;
-    font-weight: 600;
-    font-size: ;
-  }
-  
-  .inputForm {
-    border: 1.5px solid #91fa77;
-    border-radius: 10px;
-    height: 50px;
-    display: flex;
     align-items: center;
-    padding-left: 10px;
-    transition: 0.2s ease-in-out;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
   }
   
-  .input {
-    margin-left: 10px;
-    border-radius: 10px;
+  .form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form input[type="email"],
+  .form input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+    width: 100%;
     border: none;
-    width: 85%;
-    height: 100%;
-  }
-  
-  .input:focus {
-    outline: none;
-  }
-  
-  .inputForm:focus-within {
-    border: 1.5px solid #91fa77;
-  }
-  
-  .flex-row {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
   }
   
-  .flex-row > div > label {
-    font-size: 14px;
-    color: #91fa77;
-    font-weight: 400;
+  .form input[type="email"]:focus,
+  .form input[type="password"]:focus {
+    outline: 2px solid var(--clr);
+  }
+  
+  .label {
+    align-self: flex-start;
+    color: var(--clr);
+    font-weight: 600;
+  }
+  
+  .form .submit {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .form .submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
   }
   
   .span {
-    font-size: 14px;
-    margin-left: 5px;
-    color: #62ff00;
-    font-weight: 500;
-    cursor: pointer;
+    text-decoration: none;
+    color: var(--bg-dark);
   }
   
-  .button-submit {
-    margin: 20px 0 10px 0;
-    background-color: #1b2d15;
-    border: none;
-    color: #91fa77;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 10px;
-    height: 50px;
-    width: 100%;
-    cursor: pointer;
+  .span a {
+    color: var(--clr);
   }
   
-  .button-submit:hover {
-    background-color: #21341a;
-  }
-  
-  .p {
-    text-align: center;
-    color: #7fb572;
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  .btn {
-    margin-top: 10px;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    gap: 10px;
-    border: 1px solid #7fb572;
-    background-color: #21341a;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .btn:hover {
-    border: 1px solid #62ff00;
-    ;
-  }
-  
-      
+
+
 
 /*footer*/
 
 footer{
-    background-color: /*#181c17*/;
+    /*background-color: #181c17*/
     color: #91fa77;
     padding: 40px 0;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container{
@@ -342,5 +202,3 @@ footer{
 .footer-section ul li a:hover{
     color: #62ff00 ;
 }
-
-

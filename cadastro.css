@@ -5,19 +5,11 @@ body{
     background-position: center top;
     background-size: contain;
     background-attachment: fixed;
-    position: relative;
 }
 
 
 
 /*dropdown*/
-
-center {
-    display: block;
-    text-align: -webkit-center;
-    unicode-bidi: isolate;
-    height: 60px;
-}
 
 nav {
     padding: 10px 0;
@@ -77,36 +69,6 @@ nav ul li:hover .dropdown-content {
 }
 
 
-/*Home*/
-
-section h1{
-    display: inline-block;
-    position: absolute;
-    color: #000000;
-    font-size: 80px;
-    text-align: center;
-    width: 100%;
-    margin-top: 0px;
-  }
-
-@font-face{
-
-    font-family: myFirstFont;
-    src: url("who\ asks\ satan.ttf");
-  }
-  
- section div {
-    font-family: myFirstFont;
-  }
-
-section p {
-    position: absolute;
-    top: 145px;
-    right: 20px;
-    font-size: 40px;
-    color: white;
-  }
-
 
 /*footer*/
 
@@ -160,4 +122,3 @@ footer{
 .footer-section ul li a:hover{
     color: #62ff00 ;
 }
-
