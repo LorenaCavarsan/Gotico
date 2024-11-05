@@ -5,11 +5,19 @@ body{
     background-position: center top;
     background-size: contain;
     background-attachment: fixed;
+    position: relative;
 }
 
 
 
 /*dropdown*/
+
+center {
+    display: block;
+    text-align: -webkit-center;
+    unicode-bidi: isolate;
+    height: 60px;
+}
 
 nav {
     padding: 10px 0;
@@ -69,86 +77,64 @@ nav ul li:hover .dropdown-content {
 }
 
 
-/*Cadastro*/
+/*Home*/
 
-.form {
-    --bg-light: #efefef;
-    --bg-dark: #000000;   /*#707070*/
-    --clr: #00ff6a;
-    --clr-alpha: #9c9c9c60;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 300px;
+.parte-1 {
+    display: inline-block;
+    position: absolute;
+    color: #0b0d0c;
+    font-size: 80px;
+    text-align: center;
+    width: 85%;
+    margin-top: 0px;
   }
   
-  .form .input-span {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.parte-2 {
+    display: inline-block;
+    position: absolute;
+    color: #0b0d0c;
+    font-size: 80px;
+    text-align: center;
+    width: 110%;
+    margin-top: 0px;   
+}
+  
+
+section span{
+    display: inline-block;
+    width: 40%;
+    margin-top: 0px;
+    text-align: center;
+    color: #62ff00;
+    font-size: 50px;
+    position: relative;
+  }
+
+@font-face{
+
+    font-family: myFirstFont;
+    src: url("who\ asks\ satan.ttf");
   }
   
-  .form input[type="name"],
-  .form input[type="email"],
-  .form input[type="password"],
-  .form input[type="confirm.password"] {
-    border-radius: 0.5rem;
-    padding: 1rem 0.75rem;
-    width: 100%;
-    border: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: var(--clr-alpha);
-    outline: 2px solid var(--bg-dark);
+ section div {
+    font-family: myFirstFont;
   }
-  
-  .form input[type="name"]:focus,
-  .form input[type="email"]:focus,
-  .form input[type="password"]:focus,
-  .form input[type="confirm.password"] {
-    outline: 2px solid var(--clr);
+
+section p {
+    position: absolute;
+    top: 145px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
   }
-  
-  .label {
-    align-self: flex-start;
-    color: var(--clr);
-    font-weight: 600;
-  }
-  
-  .form .submit {
-    padding: 1rem 0.75rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border-radius: 3rem;
-    background-color: var(--bg-dark);
-    color: var(--bg-light);
-    border: none;
-    cursor: pointer;
-    transition: all 300ms;
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-  
-  .form .submit:hover {
-    background-color: var(--clr);
-    color: var(--bg-dark);
-  }
-  
-  .span {
-    text-decoration: none;
-    color: var(--bg-dark);
-  }
-  
-  .span a {
-    color: var(--clr);
-  }
-  
+
+.card img{
+    margin: 20px;
+    width: 160px;
+    height: 160px;
+    border-radius: 360px;   
+    object-fit:fill;
+}
 
 
 /*footer*/
@@ -157,7 +143,9 @@ footer{
     /*background-color: #181c17*/
     color: #91fa77;
     padding: 40px 0;
+    text-align: justify;
 }
+
 
 .footer-container{
     display: flex;
